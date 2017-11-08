@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Card} from 'react-materialize';
+import {Card, Button} from 'react-materialize';
 import {Link} from 'react-router-dom';
 
 class ListItem extends Component {
@@ -12,9 +12,7 @@ class ListItem extends Component {
                     <div>{this.props.start}</div>
                     <div>{this.props.end}</div>
                     <div>
-                        <Link to={`/${this.props.id}`}>
-                            Plus de détails
-                        </Link>
+                    <Button waves="light"><Link to={`/${this.props.id}`}>Plus de détails</Link></Button>
                     </div>
                 </Card>
             </div>
