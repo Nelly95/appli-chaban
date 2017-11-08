@@ -3,7 +3,7 @@ import ListItem from './list-item';
 
 
 
-class List extends Component {
+export default  class List extends Component {
     
     render() { 
         return(
@@ -12,12 +12,10 @@ class List extends Component {
                     date={row.date}
                     start={row.start}
                     end={row.end}
-                    key={row.data}
+                    key={row.id}
                     id={row.id}
                 />)}
             </div>
         )
     }
 }
-
-export default List;

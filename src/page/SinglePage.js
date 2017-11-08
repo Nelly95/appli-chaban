@@ -15,6 +15,7 @@ class SinglePage extends Component {
                     Je suis la page seule  : {match.params.id}
                 </div>
             )
+            
         }
     }
 
